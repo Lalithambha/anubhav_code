@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+ 
+<head>
+<script type="text/javascript" src="custom.js"></script>
+
+</script>
+</head>
+ 
+<body>
+<div id = "main_div">
+<label for="users">Select a user:</label>
+ 
+<select id = "drop-down" name="users" onchange = "showForm()">
+<option value=""></option>
+<option value="Employee">Employee</option>
+<option value="Employer">Employer</option>
+<option value="Contractor">Contractor</option>
+
+</select>
+ 
+</div>
+<div id ="Employer">
+<form>
+            Name        : <input type="textbox"><br>
+            Designation : <input type="textbox"><br>
+            Reportees   : <input type="textbox"><br>
+ 
+</form>
+ 
+</div>
+ 
+<div id ="Employee">
+<form>
+            Name        : <input type="textbox"><br>
+            Age         : <input type="textbox"><br>
+            Salary      : <input type="textbox"><br>
+ 
+</form>
+
+ 
+
+</div>
+
+<div id ="Contractor">
+<form>
+            Name           : <input type="textbox"><br>
+            SLA            : <input type="textbox"><br>
+            Service-Line   : <input type="textbox"><br>
+ 
+</form>
+
+
+</div>
+ 
+<br>
+<br>
+<br>
+<div>
+<button type="button"onclick="getData()"> Click here to get data </button>
+ 
+</div>
+<br>
+<br>
+<br>
+<div>
+<button type="button"onclick="postData()"> Click here to post data </button>
+ 
+</div>
+ 
+</body>
+
+
+
+ 
+</html>
